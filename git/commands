@@ -1,0 +1,50 @@
+#see current branch
+git branch | grep *
+
+#Initializing a local repo
+git init -b [main branch name]
+
+#commit(save) changes to local repo
+git commit -m "message"
+
+#add files to staging area
+git add .
+
+#display the current state of the current repository and the staging area
+git status
+
+#integrate different branches into a single branch
+git merge [otherbranchname]
+
+#upload content from local repository to remote repository
+git push origin master
+
+#fetch new commits and merge them into the local branch
+git pull 
+
+#clone or copy a repository in a new directory at a new place
+git clone https:/github...
+
+#create, list rename and delete branches
+git branch
+
+#navigate between branches
+git checkout
+
+#create new branch and navigate to it
+git checkout -b [new branch name]
+
+#configure git
+git config
+
+#see differences in files
+git diff
+
+#see previous commits 
+git log
+
+#uncommit last commit (usually when commiting and not having created a new branch)
+git reset --soft HEAD^
+
+#add remote repository to local initialized repository
+git remote add origin [remote URL]

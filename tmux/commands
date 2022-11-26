@@ -1,0 +1,38 @@
+#create a tmux session
+tmux
+
+#create a named tmux session
+tmux new -s [name]
+
+#create a new pane to the side inside a tmux session
+(ctrl + b) + '%'
+
+#create a new pane below inside a tmux session
+(ctrl + b) + '"' 
+
+#close a pane
+exit
+
+#create a new window within a tmux session
+(ctrl + b) + c
+
+#to move around windows
+(ctrl + b) + [index]
+
+#rename a windows
+(ctrl + b) + ','
+
+#dettach from a session
+(ctrl + b) + d
+
+#list dettached sessions
+tmux ls
+
+#attach to specific session
+tmux attach -t [name]
+
+#rename tmux session
+tmux rename-session -t [current-name] [new-name]
+
+#killing session
+tmux kill-session -t [name]
